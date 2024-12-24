@@ -3,16 +3,17 @@ function onBallClick(el) {
     let currentWidth = parseInt(computedStyle.width)
     let currentHeight = parseInt(computedStyle.height)
 
-    el.style.width = (currentWidth + 50) + 'px'
-    el.style.height = (currentHeight + 50) + 'px'
-    el.innerText = currentWidth + 50
+    el.style.width = (currentWidth + getRandomInt(20, 60)) + 'px'
+    el.style.height = (currentHeight + getRandomInt(20, 60)) + 'px'
+    el.style.backgroundColor = getRandomColor()
+    el.innerText = currentWidth
 
-    if(currentWidth >= 400) {
+
+    if (currentWidth >= 400) {
         el.style.width = '100px'
         el.style.height = '100px'
         el.innerText = 100
     }
-    
- }
- 
- 
+
+}
+
