@@ -17,7 +17,9 @@ div{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    text-align: center;
     margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
     background-color: antiquewhite;
 }
