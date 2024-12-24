@@ -1,4 +1,4 @@
-function onBallClick(el) {
+function onBallClick(el,maxDiameter) {
     let computedStyle = window.getComputedStyle(el)
     let currentWidth = parseInt(computedStyle.width)
     let currentHeight = parseInt(computedStyle.height)
@@ -9,7 +9,7 @@ function onBallClick(el) {
     el.innerText = currentWidth
 
 
-    if (currentWidth >= 400) {
+    if (currentWidth >= maxDiameter) {
         el.style.width = '100px'
         el.style.height = '100px'
         el.innerText = 100
